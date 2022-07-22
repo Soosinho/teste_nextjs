@@ -1,0 +1,34 @@
+.navBar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    padding: 0 20px;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: #6691FF;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.li {
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+    display: block;
+}
+
+.a {
+    padding: 8px 40px;
+    background-color: #005E7C;
+    border-radius: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
