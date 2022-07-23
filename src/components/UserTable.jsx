@@ -16,22 +16,24 @@ export default function UserTable() {
     )
 
     return (
-        <div>
-            <table >
-                <thead>
-                    <tr>
-                        <th>id</th>
-                        <th>nome</th>
-                        <th>telefone</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {DisplayData}
-                </tbody>
-            </table>
+        <div className={styles.usersList}>
+            <div className={styles.users}>
+                <table className={styles.table}>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>nome</th>
+                            <th>telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {DisplayData}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 
-    
+
 }
 

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,10 +13,14 @@ export default function Home() {
 
       <div className={styles.page}>
         <section className={styles.menu}>
-          <h2>Teste Frontend</h2>
-          <h3>Next.js</h3>
+          <div className={styles.text}>
+            <h2>Teste Frontend</h2>
+            <h3>Next.js</h3>
+          </div>
           <div>
-            <button>Listar Usuários</button>
+            <Link href="/users">
+              <li className={styles.li}><a className={styles.a} href="">Listar Usuários</a></li>
+            </Link>
           </div>
         </section>
       </div>

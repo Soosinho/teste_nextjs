@@ -23,6 +23,7 @@
     align-items: center;
     padding-inline: 10px;
     display: block;
+    
 }
 
 .a {
@@ -31,4 +32,8 @@
     border-radius: 20px;
     color: #FFFFFF;
     text-decoration: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.a:hover {
+    background-color:#007aa3;
 }
