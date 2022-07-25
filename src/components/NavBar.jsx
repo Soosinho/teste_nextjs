@@ -1,5 +1,7 @@
 import styles from '../styles/NavBar.module.css'
 import Link from 'next/link'
+import { BiHomeAlt } from 'react-icons/bi'
+import { HiOutlineUserGroup } from 'react-icons/hi'
 
 export default function NavBar() {
     return (
@@ -8,10 +10,10 @@ export default function NavBar() {
 
             <ul className={styles.ul}>
                 <Link href="/">
-                    <li className={styles.li}><a className={styles.a} href="">Início</a></li>
+                    <button className={styles.bttn}><BiHomeAlt type='regular' size={18} className={styles.icon}/> Início</button>
                 </Link>
                 <Link href="/users">
-                    <li className={styles.li}><a className={styles.a} href="">Usuários</a></li>
+                    <button className={styles.bttn}><HiOutlineUserGroup type='regular' size={18} className={styles.icon}/> Usuários</button>
                 </Link>
             </ul>
         </div>

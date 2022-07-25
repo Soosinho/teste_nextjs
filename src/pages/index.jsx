@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import { BiListUl } from 'react-icons/bi'
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="/users">
-              <li className={styles.li}><a className={styles.a} href="">Listar Usuários</a></li>
+              <button className={styles.bttn}><BiListUl type='regular' size={26} className={styles.icon}/> Listar Usuários</button>
             </Link>
           </div>
         </section>

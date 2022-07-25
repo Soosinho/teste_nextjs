@@ -1,14 +1,55 @@
 .table {
     background-color: white;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+.usersList {
+    display: flex;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: auto;
+    background-color: white;
+    height: auto;
+    max-height: 700px;
+    border: 1px solid;
 }
 
 .users {
+    margin-inline: 20px;
+    width: 70%;
+}
+
+.filter {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 10px 12px 25px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    border: 1px solid;
+    margin: 20px;
+}
+
+.editButton {
+    background-position: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 4px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    background-color: royalblue;
+}
+
+.buttonCell {
+    display: flex;
+    width: 26px;
     justify-content: center;
     align-items: center;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin-top: 100px;
 }
