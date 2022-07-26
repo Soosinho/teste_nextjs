@@ -2,7 +2,7 @@ import React from 'react'
 import users from '../../data.json'
 import styles from '../styles/UserTable.module.css'
 import Link from 'next/link'
-import { BiEdit } from 'react-icons/bi'
+import { FiEdit } from 'react-icons/fi'
 
 export default function UserTable() {
     const DisplayData = users.map(
@@ -12,10 +12,11 @@ export default function UserTable() {
                     <td>{user.id}</td>
                     <td>{user.name}</td>
                     <td>{user.phone}</td>
+                    <td>{user.age}</td>
                     <td className={styles.buttonCell}>
                         <Link href={"/users/" + user.id}>
-                            <button type='button' className={styles.editButton}>
-                                <BiEdit size={20} />
+                            <button type='button' className={styles.editButton} title="Editar">
+                                <FiEdit size={22} />
                             </button>
                         </Link>
                     </td>
@@ -33,6 +34,7 @@ export default function UserTable() {
                             <th>id</th>
                             <th>Nome</th>
                             <th>Telefone</th>
+                            <th>Idade</th>
                         </tr>
                     </thead>
                     <tbody>
