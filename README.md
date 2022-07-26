@@ -56,6 +56,28 @@ O site também possui, na parte superior, uma barra de navegação, onde o usuá
 
 ---
 
+# **Testes Unitários**
+
+---
+
+Para testes, foi utilizado o Cypress. Os testes são bem simples, e mostram algumas funcionalidades do projeto.
+
+Para rodar os testes, deve-se utilizar o comando no terminal:
+
+```
+npm run cypress
+```
+
+Uma janela se abrirá com duas opções. Abra o **"E2E Testing"** e escolha seu browser de preferência.
+
+Após abrir o browser, os testes estão contidos no arquivo **"spec.cy.js"**.
+
+
+
+Os testes navegam entre telas, buscam botões para clicar e também buscam usuários na tabela.
+
+---
+
 # Complementos
 
     O projeto não tuiliza nenhum banco de dados, portanto todos os dados dos usuários foram criados por mim e estão armazenados no arquivo **data.json**.

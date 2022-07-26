@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -17,6 +18,7 @@
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
+    "cypress": "^10.3.1",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.2"
   }
